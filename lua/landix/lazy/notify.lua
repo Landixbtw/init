@@ -9,15 +9,18 @@ return {
         use_console = false,
       }
 
-      ---@diagnostic disable-next-line: duplicate-set-field
-      vim.notify = function(msg, level, opts)
+      local notify = function(msg, level, opts)
         log.info(msg, level, opts)
         if string.find(msg, 'method .* is not supported') then
           return
         end
 
-        require 'notify'(msg, level, opts)
+        require 'notify'(msg, level)
       end
+
+      require("notify").setup({
+        background_colour = "#000000", -- Set the background color here
+      })
     end,
     cond = function()
       if not pcall(require, 'plenary') then
@@ -31,3 +34,4 @@ return {
     end,
   },
 }
+
