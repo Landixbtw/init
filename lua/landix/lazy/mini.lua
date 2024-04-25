@@ -1,5 +1,5 @@
-return { 
-{ -- Collection of various small independent plugins/modules
+return {
+  { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
     config = function()
       -- Better Around/Inside textobjects
@@ -22,13 +22,15 @@ return {
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
+
       -- local statusline = require 'mini.statusline'
       -- statusline.setup()
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
       -- cursor location to LINE:COLUMN
-      ---@diagnostic disable-next-line: duplicate-set-field
+
+      -- ---@diagnostic disable-next-line: duplicate-set-field
       -- statusline.section_location = function()
       --   return '%2l:%-2v'
       -- end
@@ -37,7 +39,7 @@ return {
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
   },
-{
+  {
     'echasnovski/mini.animate', -- Specify the plugin
     version = false, -- This indicates that you are not specifying a particular version
     config = function()

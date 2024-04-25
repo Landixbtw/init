@@ -9,6 +9,7 @@ end
 return {
   {
     'folke/tokyonight.nvim',
+    enabled = false,
     config = function()
       require('tokyonight').setup {
         -- your configuration comes here
@@ -32,6 +33,7 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine',
+    enabled = false,
     config = function()
       require('rose-pine').setup {
         disable_background = false,

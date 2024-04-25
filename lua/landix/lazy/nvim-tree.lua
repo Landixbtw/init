@@ -2,7 +2,7 @@ return {
   'nvim-tree/nvim-tree.lua',
   version = '*',
   lazy = false,
-  enable = false,
+  enabled = true,
   dependencies = {
     'nvim-tree/nvim-web-devicons',
     'antosha417/nvim-lsp-file-operations',

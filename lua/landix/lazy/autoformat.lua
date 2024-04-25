@@ -11,7 +11,7 @@ return {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
         go = { 'goimports', 'gofmt' },
-        c = { 'clang' },
+        -- c = { 'clang' },
         ['_'] = { 'trim_whitespace ' },
       },
     },
