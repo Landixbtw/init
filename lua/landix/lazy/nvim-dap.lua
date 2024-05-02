@@ -13,7 +13,10 @@ return {
   dependencies = {
     -- Creates a beautiful debugger UI
     'rcarriga/nvim-dap-ui',
+
+    -- Required dependency for nvim-dap-ui
     'nvim-neotest/nvim-nio',
+
     -- Installs the debug adapters for you
     'williamboman/mason.nvim',
     'jay-babu/mason-nvim-dap.nvim',
@@ -25,6 +28,15 @@ return {
     local dap = require 'dap'
     local dapui = require 'dapui'
 
+    dap.adapters.codelldb = {
+      type = 'server',
+      port = "${port}",
+      executable = {
+        command = '/home/ole/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb',
+        args = {"--port", "${port}"}
+      }
+    }
+
     require('mason-nvim-dap').setup {
       -- Makes a best effort to setup the various debuggers with
       -- reasonable debug configurations
@@ -34,14 +46,12 @@ return {
       -- see mason-nvim-dap README for more information
       handlers = {},
 
-      automatic_installation = true,
       -- You'll need to check that you have the required things installed
       -- online, please don't ask me how to install them :)
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
-
         'delve',
-        'codelldb',
+        "codelldb",
       },
     }
 

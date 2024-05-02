@@ -3,7 +3,6 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-
 vim.g.have_nerd_font = true
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -15,10 +14,19 @@ vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
--- Set tabs to 2 spaces
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
+
+-- Set tabs to 1 tab
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
+
+-- Enable auto indenting and set it to spaces
+vim.opt.cinoptions = "true"
+vim.opt.shiftwidth = 4
+
+-- Enable smart indenting (see https://stackoverflow.com/questions/1204149/smart-wrap-in-vim)
+vim.opt.breakindent = false 
+
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -30,13 +38,6 @@ vim.opt.showmode = false
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
-
--- Enable auto indenting and set it to spaces
-vim.opt.smartindent = true
-vim.opt.shiftwidth = 2
-
--- Enable smart indenting (see https://stackoverflow.com/questions/1204149/smart-wrap-in-vim)
-vim.opt.breakindent = true
 
 -- Save undo history
 vim.opt.undofile = true

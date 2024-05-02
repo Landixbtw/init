@@ -33,7 +33,7 @@ return {
       --    for various frameworks/libraries/etc. but you will have to
       --    set up the ones that are useful for you.
       --
-      -- 'rafamadriz/friendly-snippets',
+      'rafamadriz/friendly-snippets',
     },
     config = function()
       -- See `:help cmp`
@@ -96,7 +96,7 @@ return {
           end, { 'i', 's' }),
         },
         sources = {
-          -- { name = 'nvim_lsp' },
+          { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path', max_item_count = 3 }, -- file system paths
           { name = 'buffer', max_item_count = 5 }, -- text within current buffer
