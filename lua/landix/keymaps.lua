@@ -7,6 +7,10 @@ keymap.set('n', 'tc', ':tabclose<Return>', opts)
 keymap.set('n', '<tab>', ':tabnext<Return>', opts)
 keymap.set('n', '<s-tab>', ':tabprev<Return>', opts)
 
+-- open netrw
+keymap.set("n", "<leader>nr", vim.cmd.Ex)
+
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 -- Diagnostic keymaps
