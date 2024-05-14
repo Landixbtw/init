@@ -56,7 +56,7 @@ return {
 		end,
 	},
 	{
-		enabled = true,
+		enabled = false,
 		'rockyzhang24/arctic.nvim',
 		branch = 'v2',
 		dependencies = { 'rktjmp/lush.nvim' },
@@ -69,6 +69,20 @@ return {
 		'muchzill4/doubletrouble',
 		config = function()
 			vim.cmd.colorscheme 'doubletrouble'
+		end,
+	},
+	{
+		enabled = false,
+		'dgox16/oldworld.nvim',
+		config = function()
+			vim.cmd.colorscheme 'oldworld'
+		end,
+	},
+	{
+		enabled = true,
+		'eemed/sitruuna.vim',
+		config = function()
+			vim.cmd.colorscheme 'sitruuna'
 		end,
 	},
 }
