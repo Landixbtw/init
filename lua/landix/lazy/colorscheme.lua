@@ -8,6 +8,7 @@ return {
 		end,
 	},
 	{
+        -- tsoding emacs theme
 		enabled = false,
 		'blazkowolf/gruber-darker.nvim',
 		config = function()
@@ -34,28 +35,7 @@ return {
 		end,
 	},
 	{
-		enabled = false,
-		'Mofiqul/vscode.nvim',
-		config = function()
-			require('vscode').setup {
-				transparent = true,
-				underline_links = true,
-			}
-			vim.cmd.colorscheme 'vscode'
-		end,
-	},
-	{
-		-- Doesnt work right now
-		enabled = false,
-		'Landixbtw/LilLilacLush',
-		dependencies = {
-			'rktjmp/lush.nvim',
-		},
-		config = function()
-			vim.cmd.colorscheme 'lillilac'
-		end,
-	},
-	{
+        -- vcsode but better
 		enabled = false,
 		'rockyzhang24/arctic.nvim',
 		branch = 'v2',
@@ -66,23 +46,74 @@ return {
 	},
 	{
 		enabled = false,
-		'muchzill4/doubletrouble',
-		config = function()
-			vim.cmd.colorscheme 'doubletrouble'
-		end,
-	},
-	{
-		enabled = false,
 		'dgox16/oldworld.nvim',
 		config = function()
 			vim.cmd.colorscheme 'oldworld'
 		end,
 	},
 	{
-		enabled = true,
+        -- yellow ish
+		enabled = false,
 		'eemed/sitruuna.vim',
 		config = function()
 			vim.cmd.colorscheme 'sitruuna'
 		end,
 	},
+    {
+        enabled = false,
+        "kvrohit/rasmus.nvim",
+        config = function ()
+            vim.cmd.colorscheme("rasmus")
+        end,
+    },
+    {
+        enabled = false,
+        "craftzdog/solarized-osaka.nvim",
+        branch = "osaka",
+        config = function ()
+        vim.cmd.colorscheme("solarized-osaka")
+       end,
+    },
+    {
+        enabled = false,
+        "LunarVim/templeos.nvim",
+        config = function ()
+            vim.cmd.colorscheme("templeos")
+        end,
+    },
+    {
+        enabled = false,
+        "datsfilipe/min-theme.nvim",
+        config = function ()
+            vim.cmd.colorscheme("min-theme")
+        end,
+    },
+    {
+        -- this is really good
+        enabled = false,
+        "adisen99/codeschool.nvim",
+        dependencies = { 'rktjmp/lush.nvim' },
+        config = function ()
+            vim.g.codeschool_contrast_dark = "soft"
+
+            vim.cmd.colorscheme("codeschool")
+        end
+    },
+    {
+      "cdmill/neomodern.nvim",
+      lazy = false,
+      priority = 1000,
+      config = function()
+        require("neomodern").setup({
+            style = "roseprime",
+            toggle_style_key = nil,
+            toggle_style_list = {
+                "campfire",
+                "roseprime",
+                "darkforest",
+            },
+        })
+        require("neomodern").load()
+      end,
+    },
 }

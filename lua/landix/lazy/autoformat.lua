@@ -1,5 +1,6 @@
 return {
 	{ -- Autoformat
+		enabled = false,
 		'stevearc/conform.nvim',
 		opts = {
 			notify_on_error = true,
