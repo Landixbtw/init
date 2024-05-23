@@ -100,6 +100,7 @@ return {
         end
     },
     {
+        enabled = false,
       "cdmill/neomodern.nvim",
       lazy = false,
       priority = 1000,
