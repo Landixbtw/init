@@ -60,7 +60,7 @@ return {
 		end,
 	},
     {
-        enabled = false,
+        enabled = true,
         "kvrohit/rasmus.nvim",
         config = function ()
             vim.cmd.colorscheme("rasmus")
@@ -79,13 +79,6 @@ return {
         "LunarVim/templeos.nvim",
         config = function ()
             vim.cmd.colorscheme("templeos")
-        end,
-    },
-    {
-        enabled = false,
-        "datsfilipe/min-theme.nvim",
-        config = function ()
-            vim.cmd.colorscheme("min-theme")
         end,
     },
     {
