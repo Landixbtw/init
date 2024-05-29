@@ -1,6 +1,9 @@
 return {
 	{ -- LSP Configuration & Plugins
 		'neovim/nvim-lspconfig',
+        opts = {
+            inlay_hints = { enabled = true },
+        },
 		dependencies = {
 			-- Automatically install LSPs and related tools to stdpath for Neovim
 			{ 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
