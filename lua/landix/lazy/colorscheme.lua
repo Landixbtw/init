@@ -1,13 +1,5 @@
 return {
 	{
-		enabled = false,
-		'ellisonleao/gruvbox.nvim',
-		config = function()
-			-- Set colorscheme
-			vim.cmd.colorscheme 'gruvbox'
-		end,
-	},
-	{
         -- tsoding emacs theme
 		enabled = false,
 		'blazkowolf/gruber-darker.nvim',
@@ -16,10 +8,11 @@ return {
 		end,
 	},
 	{
+        -- good light theme
 		enabled = false,
 		'rebelot/kanagawa.nvim',
 		config = function()
-			vim.cmd.colorscheme 'kanagawa-dragon'
+			vim.cmd.colorscheme 'kanagawa-lotus'
 		end,
 	},
 	{
@@ -33,14 +26,7 @@ return {
 		end,
 	},
 	{
-		enabled = false,
-		'dgox16/oldworld.nvim',
-		config = function()
-			vim.cmd.colorscheme 'oldworld'
-		end,
-	},
-	{
-        -- yellow ish
+        -- yellow ish, ok theme
 		enabled = false,
 		'eemed/sitruuna.vim',
 		config = function()
@@ -48,13 +34,7 @@ return {
 		end,
 	},
     {
-        enabled = false,
-        "kvrohit/rasmus.nvim",
-        config = function ()
-            vim.cmd.colorscheme("rasmus")
-        end,
-    },
-    {
+        -- broken
         enabled = false,
         "craftzdog/solarized-osaka.nvim",
         branch = "osaka",
@@ -63,6 +43,7 @@ return {
        end,
     },
     {
+        -- block cursor is white on white theme
         enabled = false,
         "LunarVim/templeos.nvim",
         config = function ()
@@ -70,32 +51,10 @@ return {
         end,
     },
     {
-        -- this is really good
-        enabled = false,
-        "adisen99/codeschool.nvim",
-        dependencies = { 'rktjmp/lush.nvim' },
+        enabled = true,
+        "talha-akram/noctis.nvim",
         config = function ()
-            vim.g.codeschool_contrast_dark = "soft"
-
-            vim.cmd.colorscheme("codeschool")
+            vim.cmd.colorscheme("noctis")
         end
-    },
-    {
-        enabled = false,
-      "cdmill/neomodern.nvim",
-      lazy = false,
-      priority = 1000,
-      config = function()
-        require("neomodern").setup({
-            style = "roseprime",
-            toggle_style_key = nil,
-            toggle_style_list = {
-                "campfire",
-                "roseprime",
-                "darkforest",
-            },
-        })
-        require("neomodern").load()
-      end,
-    },
+    }
 }
