@@ -17,18 +17,6 @@ return {
 	},
 	{
 		enabled = false,
-		'olivercederborg/poimandres.nvim',
-		config = function()
-			require('poimandres').setup {
-				bold_vert_split = false,
-				disable_background = false,
-				disable_float_background = true,
-			}
-			vim.cmd.colorscheme 'poimandres'
-		end,
-	},
-	{
-		enabled = false,
 		'rebelot/kanagawa.nvim',
 		config = function()
 			vim.cmd.colorscheme 'kanagawa-dragon'
@@ -60,7 +48,7 @@ return {
 		end,
 	},
     {
-        enabled = true,
+        enabled = false,
         "kvrohit/rasmus.nvim",
         config = function ()
             vim.cmd.colorscheme("rasmus")
