@@ -25,7 +25,7 @@ vim.opt.cinoptions = "true"
 vim.opt.shiftwidth = 4
 
 -- Enable smart indenting (see https://stackoverflow.com/questions/1204149/smart-wrap-in-vim)
-vim.opt.breakindent = false 
+vim.opt.breakindent = false
 
 
 -- Enable mouse mode, can be useful for resizing splits for example!

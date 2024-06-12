@@ -1,6 +1,6 @@
 return {
 	{
-		enabled = false,
+		enabled = true,
 		'lukas-reineke/indent-blankline.nvim',
 		config = function()
 			-- Define the colors for the indentation guides
