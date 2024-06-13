@@ -1,7 +1,7 @@
 return {
 	{
         -- tsoding emacs theme
-		enabled = true,
+		enabled = false,
 		'blazkowolf/gruber-darker.nvim',
 		config = function()
 			vim.cmd.colorscheme 'gruber-darker'
@@ -34,10 +34,18 @@ return {
         end,
     },
     {
+        -- lowlevellearning esque
         enabled = false,
         "talha-akram/noctis.nvim",
         config = function ()
             vim.cmd.colorscheme("noctis")
         end
+    },
+    {
+        enabled = true,
+        "jacoborus/tender.vim",
+        config = function ()
+            vim.cmd.colorscheme("tender")
+        end,
     },
 }
