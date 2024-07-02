@@ -33,19 +33,12 @@ return {
             vim.cmd.colorscheme("templeos")
         end,
     },
-    {
-        -- lowlevellearning esque
-        enabled = false,
-        "talha-akram/noctis.nvim",
-        config = function ()
-            vim.cmd.colorscheme("noctis")
-        end
-    },
-    {
+    { -- meh
         enabled = true,
-        "jacoborus/tender.vim",
+        "erikbackman/brightburn.vim",
         config = function ()
-            vim.cmd.colorscheme("tender")
-        end,
-    },
+            vim.cmd.colorscheme("brightburn")
+        end
+    }
 }
+
