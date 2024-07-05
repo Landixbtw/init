@@ -1,5 +1,5 @@
 return {
-  -- buffer line
+  -- buffer line,
   {
     'akinsho/bufferline.nvim',
     event = 'VeryLazy',
