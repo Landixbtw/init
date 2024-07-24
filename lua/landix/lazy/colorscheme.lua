@@ -9,7 +9,7 @@ return {
 	},
 	{
         -- good light theme
-		enabled = true,
+		enabled = false,
 		'rebelot/kanagawa.nvim',
 		config = function()
 			vim.cmd.colorscheme 'kanagawa-lotus'
@@ -39,6 +39,22 @@ return {
         config = function ()
             vim.cmd.colorscheme("brightburn")
         end
+    },
+    {
+        enabled = false,
+        "catppuccin/nvim",
+        name = "catppuccin",
+        config = function ()
+            vim.cmd.colorscheme("catppuccin")
+        end
+    },
+    {
+        enabled = true,
+        "vague2k/vague.nvim",
+        config = function ()
+            vim.cmd.colorscheme("vague")
+        end
     }
+
 }
 
