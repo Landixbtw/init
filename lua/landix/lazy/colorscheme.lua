@@ -41,15 +41,14 @@ return {
         end
     },
     {
-        enabled = false,
-        "catppuccin/nvim",
-        name = "catppuccin",
+        enabled = true,
+        "morhetz/gruvbox",
         config = function ()
-            vim.cmd.colorscheme("catppuccin")
+            vim.cmd.colorscheme("gruvbox")
         end
     },
     {
-        enabled = true,
+        enabled = false,
         "vague2k/vague.nvim",
         config = function ()
             vim.cmd.colorscheme("vague")
