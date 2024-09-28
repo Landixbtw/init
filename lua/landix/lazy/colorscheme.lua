@@ -33,27 +33,19 @@ return {
             vim.cmd.colorscheme("templeos")
         end,
     },
-    { -- meh
-        enabled = false,
-        "erikbackman/brightburn.vim",
-        config = function ()
-            vim.cmd.colorscheme("brightburn")
-        end
-    },
     {
-        enabled = true,
+        enabled = false,
         "morhetz/gruvbox",
         config = function ()
             vim.cmd.colorscheme("gruvbox")
         end
     },
     {
-        enabled = false,
-        "vague2k/vague.nvim",
+        enabled = true,
+        "doums/darcula",
         config = function ()
-            vim.cmd.colorscheme("vague")
+            vim.cmd.colorscheme("darcula")
         end
     }
-
 }
 
