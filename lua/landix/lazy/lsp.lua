@@ -227,7 +227,7 @@ return {
 				-- But for many setups, the LSP (`tsserver`) will work just fine
 				-- tsserver = {},
 				--
-
+                java_language_server = {};
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes = { ...},
@@ -261,7 +261,6 @@ return {
                 "bashls",
                 "lua_ls",
                 "yamlls",
-                "asm_lsp",
 			})
 			require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

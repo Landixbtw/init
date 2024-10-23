@@ -1,14 +1,5 @@
 return {
-  {
-    'mistricky/codesnap.nvim',
-    dependencies = {
-      'nvim-lua/plenary.nvim',
+    {
+        "kufii/CodeSnap",
     },
-    config = function()
-      require('codesnap').setup {
-        bg_color = '#A41034',
-        watermark = 'ole_wortmann',
-      }
-    end,
-  },
 }
